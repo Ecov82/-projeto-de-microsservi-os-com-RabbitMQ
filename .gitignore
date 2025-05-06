@@ -1,1 +1,49 @@
-.idea
+# Ignorar arquivos e pastas comuns do PHP
+/vendor/
+*.log
+*.cache
+*.env
+.env.*
+
+# Ignorar arquivos gerados por IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de cache e sessões
+*.bak
+*.tmp
+*.swp
+*.lock
+
+# Ignorar arquivos de deploy e build
+/build/
+/dist/
+/node_modules/
+
+# Docker e Compose
+docker-compose.override.yml
+*.pid
+
+# Git submodules (caso remova ou reorganize)
+.gitmodules
+
+# Composer
+composer.lock
+
+# PHPUnit
+.phpunit.result.cache
+phpunit.xml
+
+# Nginx ou Apache temporários
+*.conf~
+
+# Front-end (caso use em algum microserviço)
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
